@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class food : MonoBehaviour
+public class retryBtn : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,9 +14,11 @@ public class food : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, 0.05f, 0);
-        if (transform.position.y > 26.0f) {
-            Destroy(gameObject);
-        }
+        
+    }
+
+    public void ReGame()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }
