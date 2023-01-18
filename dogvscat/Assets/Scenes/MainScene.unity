@@ -620,6 +620,7 @@ MonoBehaviour:
   dog: {fileID: 2068137986}
   food: {fileID: 6000659324513981521, guid: d583493f74eaab84f9766e93b2fee221, type: 3}
   nomalCat: {fileID: 8685331416112895618, guid: 6a8d297155254304d992cc30aa70de68, type: 3}
+  fatCat: {fileID: 5077554637649875836, guid: cf3181a18bca00e45bb6349d6b99f494, type: 3}
   retryBtn: {fileID: 473494985}
   levelFront: {fileID: 2055648574}
   levelText: {fileID: 1906743469}
