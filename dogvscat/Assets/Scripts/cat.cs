@@ -18,7 +18,10 @@ public class cat : MonoBehaviour
 
         if (type == 1) {
             full = 10f;
+        } else if (type == 2) {
+            full = 3f;
         }
+
     }
 
     // Update is called once per frame
@@ -30,6 +33,8 @@ public class cat : MonoBehaviour
                 transform.position += new Vector3(0, -0.025f, 0);
             } else if (type == 1) {
                 transform.position += new Vector3(0, -0.0125f, 0);
+            } else if (type == 2) {
+                transform.position += new Vector3(0, -0.035f, 0);
             }
             
 
