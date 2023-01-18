@@ -6,6 +6,7 @@ public class gameManager : MonoBehaviour
 {
     public GameObject dog;
     public GameObject food;
+    public GameObject nomalCat;
 
     // Start is called before the first frame update
     void Start()
