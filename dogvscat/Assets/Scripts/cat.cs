@@ -6,6 +6,7 @@ public class cat : MonoBehaviour
 {
     float full = 5f;
     float energy = 0f;
+    bool isFull = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +36,14 @@ public class cat : MonoBehaviour
                 transform.position += new Vector3(-0.05f, 0, 0);
             }
 
-            gameObject.transform.Find("hungry").gameObject.SetActive(false);
-            gameObject.transform.Find("full").gameObject.SetActive(true);
+            if (isFull == false) {
+                gameManager.I.addCat();
+                gameObject.transform.Find("hungry").gameObject.SetActive(false);
+                gameObject.transform.Find("full").gameObject.SetActive(true);
+
+                isFull = true;
+            }
+
             Destroy(gameObject, 3f);
         }
     }
